@@ -254,17 +254,7 @@
   
   
   
-        <model-viewer src="crimp.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="-13.3deg 100.6deg 0.4997m" field-of-view="30deg">
-          <div class="progress-bar hide" slot="progress-bar">
-              <div class="update-bar"></div>
-          </div>
-          <button slot="ar-button" id="ar-button">
-              View in your space
-          </button>
-          <div id="ar-prompt">
-              <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-          </div>
-      </model-viewer>
+        <model-viewer src="crimp.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="24.79deg 111.4deg 0.6796m" field-of-view="30deg"> </model-viewer>
       
       
   
@@ -425,14 +415,14 @@
 
     var viewer = document.querySelector("model-viewer")
 
-    d3.select("#step-one-jug").on("stepin", function () {
+    d3.select("#step-one").on("stepin", function () {
       // camera-orbit="-20.04deg 92.24deg 0.9979m" field-of-view="30deg">
       viewer.cameraOrbit = "-20.04deg 92.24deg 0.9979m"
       viewer.fieldOfView = "30deg"
       viewer.cameratarget = "-0.01 0.42 -0.00"
     })
 
-    d3.select("#step-two-jug").on("stepin", function () {
+    d3.select("#step-two").on("stepin", function () {
       // camera-orbit="334.9deg 75.46deg 5.306m" field-of-view="16.78deg" 
       viewer.cameraOrbit = "6.64deg 81.68deg 0.9979m"
       viewer.fieldOfView = "30deg"
